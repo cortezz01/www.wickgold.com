@@ -1,119 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wicklow Gold LTDA</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wicklow Gold</title>
   <style>
     body {
+      font-family: sans-serif;
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #004225; /* verde escuro */
-      color: #fff;
+      background-color: #fefefe;
+      color: #333;
     }
     header {
-      background-color: #00351b;
-      padding: 2rem;
+      background-color: #006400;
+      color: gold;
+      padding: 1em;
       text-align: center;
     }
     header img {
-      max-width: 250px;
+      height: 80px;
     }
-    h1, h2 {
-      font-family: 'Playfair Display', serif;
-      color: #ffcc00; /* dourado */
+    nav {
+      background-color: #004d00;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      padding: 1em 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
     section {
-      padding: 4rem 2rem;
+      padding: 2em;
       max-width: 1000px;
       margin: auto;
     }
-    .products, .sales {
-      background-color: #005c2c;
-      margin-top: 2rem;
-      border-radius: 10px;
-      padding: 2rem;
+    .produtos {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 2em;
     }
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 1rem;
-    }
-    .product {
-      background-color: #00351b;
-      border: 1px solid #00703c;
-      border-radius: 10px;
-      padding: 1rem;
+    .produto {
       text-align: center;
+      max-width: 250px;
     }
-    .product img {
-      margin-top: 1rem;
-      width: 100%;
-      max-width: 180px;
+    .produto img {
+      max-width: 100%;
       height: auto;
-      border-radius: 10px;
     }
     footer {
+      background-color: #006400;
+      color: gold;
       text-align: center;
-      padding: 2rem;
-      background-color: #00351b;
-      color: #ccc;
-    }
-    a {
-      color: #ffcc00;
-      text-decoration: none;
+      padding: 2em 1em;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Wicklow Gold LTDA" />
-    <h1>Wicklow Gold LTDA</h1>
-    <p>Cerveja Artesanal Irlandesa Premium</p>
+    <img src="logo.png" alt="Logo Wicklow Gold">
+    <h1>WICKLOW GOLD</h1>
   </header>
+  <nav>
+    <a href="#quem-somos">Quem somos nós?</a>
+    <a href="#produtos">Nossos Produtos</a>
+    <a href="#vendas">Venda & Distribuição</a>
+  </nav>
 
-  <section>
-    <h2>Sobre Nós</h2>
-    <p>
-      A Wicklow Gold nasceu da paixão por tradições irlandesas e pela arte de fabricar cerveja artesanal de alta qualidade. Trazemos ao Brasil a experiência autêntica da Irlanda em cada gole, com ingredientes selecionados e processos refinados.
-    </p>
+  <section id="quem-somos">
+    <h2>Quem somos nós?</h2>
+    <p>Sediada na charmosa cidade de Três Corações, em Minas Gerais, a WICKLOW GOLD LTDA nasce com o propósito de redefinir o conceito de cerveja artesanal no Brasil. Inspirada pela tradição irlandesa, a empresa cria uma experiência sensorial única onde cada gole conta uma história de qualidade, paixão e excelência.​</p>
+    <p>Na Wicklow Gold, a cerveja é mais do que uma bebida: é uma celebração. Utilizando ingredientes selecionados, maltes especiais e processos rigorosos de produção, nossas receitas unem inovação e tradição para entregar um produto final de altíssimo padrão. Cada rótulo é pensado para encantar paladares exigentes, que valorizam corpo, aroma e equilíbrio perfeito.​</p>
+    <p>Com uma linha de cervejas escuras e encorpadas, nossa marca se destaca não apenas pelo sabor marcante, mas também pelo design sofisticado e espírito lúdico que carrega o símbolo de um duende carismático, guardião do nosso segredo dourado: a arte de produzir uma cerveja premium incomparável.​</p>
   </section>
 
-  <section class="products">
+  <section id="produtos">
     <h2>Nossos Produtos</h2>
-    <div class="product-grid">
-      <div class="product">
-        <h3>Wicklow Lager</h3>
-        <p>Leve, dourada e refrescante. Ideal para qualquer ocasião.</p>
+    <div class="produtos">
+      <div class="produto">
         <img src="wicklow lager.png" alt="Wicklow Lager">
+        <h3>Wicklow Lager</h3>
+        <p>Uma lager artesanal de coloração dourada e brilho intenso. Refrescante, com sabor suave e levemente maltado, é perfeita para dias ensolarados e celebrações leves. Sua carbonatação equilibrada realça a pureza dos ingredientes e o frescor do lúpulo.</p>
       </div>
-      <div class="product">
+      <div class="produto">
+        <img src="Wicklow stout.png" alt="Wicklow Stout">
         <h3>Wicklow Stout</h3>
-        <p>Escura, cremosa, com notas de café e chocolate. Tradicional irlandesa.</p>
-        <img src="irish stout.png" alt="Wicklow Stout">
+        <p>Escura, cremosa e intensa. A Wicklow Stout é uma verdadeira homenagem à tradição irlandesa. Com notas de café torrado, chocolate amargo e um amargor equilibrado, proporciona uma experiência rica e marcante para paladares exigentes.</p>
       </div>
-      <div class="product">
-        <h3>Wicklow Red Ale</h3>
-        <p>Coloração âmbar e sabor maltado marcante. Equilibrada e encorpada.</p>
+      <div class="produto">
         <img src="wicklow Red Ale.png" alt="Wicklow Red Ale">
+        <h3>Wicklow Red Ale</h3>
+        <p>De coloração avermelhada e corpo médio, a Red Ale da Wicklow Gold é envolvente e saborosa. Suas notas caramelizadas e levemente tostadas equilibram-se com um toque sutil de lúpulo, tornando-a ideal para momentos de descontração.</p>
       </div>
     </div>
   </section>
 
-  <section class="sales">
+  <section id="vendas">
     <h2>Venda & Distribuição</h2>
-    <p>
-      Estamos em expansão e buscamos parceiros para levar a Wicklow Gold a todo o Brasil. Se você é distribuidor, bar ou restaurante e deseja oferecer nossas cervejas, entre em contato pelo e-mail: <a href="mailto:vendas@wicklowgold.com">vendas@wicklowgold.com</a>
-    </p>
+    <p>Estamos em expansão e buscamos parceiros para levar a Wicklow Gold a todo o Brasil. Se você é distribuidor, bar ou restaurante e deseja oferecer nossas cervejas, entre em contato pelo e-mail: <strong>vendas@wicklowgold.com</strong></p>
   </section>
 
   <footer>
     <p>&copy; 2025 Wicklow Gold LTDA. Todos os direitos reservados.</p>
-    <p>
-      <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Contato</a>
-    </p>
   </footer>
 </body>
 </html>
