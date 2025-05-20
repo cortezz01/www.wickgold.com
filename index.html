@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,11 +9,11 @@
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
-      background-color: #000;
+      background-color: #004225; /* verde escuro */
       color: #fff;
     }
     header {
-      background-color: #111;
+      background-color: #00351b;
       padding: 2rem;
       text-align: center;
     }
@@ -23,7 +22,7 @@
     }
     h1, h2 {
       font-family: 'Playfair Display', serif;
-      color: #d4af37;
+      color: #ffcc00; /* dourado */
     }
     section {
       padding: 4rem 2rem;
@@ -31,37 +30,39 @@
       margin: auto;
     }
     .products, .sales {
-      background-color: #1a1a1a;
+      background-color: #005c2c;
       margin-top: 2rem;
       border-radius: 10px;
       padding: 2rem;
     }
-    .product-grid, .gallery {
+    .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      gap: 2rem;
       margin-top: 1rem;
     }
-    .product, .gallery img {
-      background-color: #000;
-      border: 1px solid #333;
+    .product {
+      background-color: #00351b;
+      border: 1px solid #00703c;
       border-radius: 10px;
       padding: 1rem;
+      text-align: center;
     }
-    .gallery img {
-      padding: 0;
+    .product img {
+      margin-top: 1rem;
       width: 100%;
+      max-width: 180px;
       height: auto;
       border-radius: 10px;
     }
     footer {
       text-align: center;
       padding: 2rem;
-      background-color: #111;
-      color: #888;
+      background-color: #00351b;
+      color: #ccc;
     }
     a {
-      color: #d4af37;
+      color: #ffcc00;
       text-decoration: none;
     }
   </style>
@@ -86,25 +87,18 @@
       <div class="product">
         <h3>Wicklow Lager</h3>
         <p>Leve, dourada e refrescante. Ideal para qualquer ocasião.</p>
+        <img src="wicklow lager.png" alt="Wicklow Lager">
       </div>
       <div class="product">
         <h3>Wicklow Stout</h3>
         <p>Escura, cremosa, com notas de café e chocolate. Tradicional irlandesa.</p>
+        <img src="irish stout.png" alt="Wicklow Stout">
       </div>
       <div class="product">
         <h3>Wicklow Red Ale</h3>
         <p>Coloração âmbar e sabor maltado marcante. Equilibrada e encorpada.</p>
+        <img src="wicklow Red Ale.png" alt="Wicklow Red Ale">
       </div>
-    </div>
-  </section>
-
-  <section class="gallery">
-    <h2>Estande & Galeria</h2>
-    <p>Confira nossa estande e nossas cervejas artesanais:</p>
-    <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1603052875249-497c8977a068" alt="Cervejas Artesanais 1">
-      <img src="https://images.unsplash.com/photo-1582719478250-84c10f76e488" alt="Cervejas Artesanais 2">
-      <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0" alt="Estande de Cerveja">
     </div>
   </section>
 
