@@ -18,7 +18,7 @@
       text-align: center;
     }
     header img {
-      max-width: 200px;
+      max-width: 250px;
     }
     h1, h2 {
       font-family: 'Playfair Display', serif;
@@ -35,17 +35,23 @@
       border-radius: 10px;
       padding: 2rem;
     }
-    .product-grid {
+    .product-grid, .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
       margin-top: 1rem;
     }
-    .product {
+    .product, .gallery img {
       background-color: #000;
       border: 1px solid #333;
       border-radius: 10px;
       padding: 1rem;
+    }
+    .gallery img {
+      padding: 0;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
     }
     footer {
       text-align: center;
@@ -61,7 +67,7 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Wicklow Gold LTDA" />
+    <img src="/mnt/data/f024ec93-b56a-4667-ac01-68459cff75d1.png" alt="Wicklow Gold LTDA" />
     <h1>Wicklow Gold LTDA</h1>
     <p>Cerveja Artesanal Irlandesa Premium</p>
   </header>
@@ -88,6 +94,16 @@
         <h3>Wicklow Red Ale</h3>
         <p>Coloração âmbar e sabor maltado marcante. Equilibrada e encorpada.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Estande & Galeria</h2>
+    <p>Confira nossa estande e nossas cervejas artesanais:</p>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1603052875249-497c8977a068" alt="Cervejas Artesanais 1">
+      <img src="https://images.unsplash.com/photo-1582719478250-84c10f76e488" alt="Cervejas Artesanais 2">
+      <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0" alt="Estande de Cerveja">
     </div>
   </section>
 
